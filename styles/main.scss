@@ -1,0 +1,119 @@
+$main-color: #1f2039;
+$second-color: #a5b4fc;
+$third-color: #f9f8ff;
+
+$main-police: 'Manrope', sans-serif;
+$title-police: 'Montserrat', sans-serif;
+
+$max-width-media: 996px;
+
+@import 'index';
+@import 'portfolio';
+@import 'a-propos';
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: $main-police;
+    font-size: 1em;
+    background-color: $main-color;
+    color: $third-color;
+}
+
+header,
+footer {
+    background-color: white;
+    padding: 20px 50px;
+}
+
+/* Ceci est mon block navbar*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $max-width-media) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Ceci est un élément */
+    &__link {
+        margin-left: 30px;
+        color: #242424;
+        text-decoration: none;
+        
+        /* Ceci est un modificateur */
+        &--purple {
+            color: #a5b4fc
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__image {
+        @media screen and (max-width: $max-width-media) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+section {
+    padding: 80px;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: $second-color;
+    font-family: $title-police;
+
+    @media screen and (max-width: $max-width-media) {
+        font-size: 2em;
+    }
+}
+
+p,
+li {
+    font-size: 1.1em;
+}
+
+.btn__cta {
+    display: inline-block;
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+    text-decoration: none;
+
+    &:hover{
+        background: linear-gradient(#696484, #8788ba);
+    }
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__icon {
+        margin-left: 30px;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+
+
+
