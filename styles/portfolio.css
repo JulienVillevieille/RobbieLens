@@ -1,3 +1,7 @@
+.main__title {
+  text-align: center;
+}
+
 /* Section Portfolio */
 .portfolio {
   background-color: white;
@@ -5,6 +9,7 @@
 .portfolio__title {
   color: #242424;
   margin-bottom: 80px;
+  text-align: center;
 }
 .portfolio__grid {
   display: grid;
@@ -13,6 +18,7 @@
 }
 .portfolio__grid--paysages {
   grid-template-rows: 300px 300px 300px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 996px) {
   .portfolio__grid--paysages {

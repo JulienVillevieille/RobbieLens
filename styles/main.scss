@@ -1,11 +1,4 @@
-$main-color: #1f2039;
-$second-color: #a5b4fc;
-$third-color: #f9f8ff;
-
-$main-police: 'Manrope', sans-serif;
-$title-police: 'Montserrat', sans-serif;
-
-$max-width-media: 996px;
+@import 'vars';
 
 @import 'index';
 @import 'portfolio';
@@ -18,23 +11,18 @@ $max-width-media: 996px;
 
 body {
     font-family: $main-police;
-    font-size: 1em;
+    font-size: 1.1em;
     background-color: $main-color;
     color: $third-color;
 }
 
-header,
-footer {
-    background-color: white;
-    padding: 20px 50px;
-}
-
-/* Ceci est mon block navbar*/
 .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    padding: 20px 50px;
 
     @media screen and (max-width: $max-width-media) {
         flex-direction: column;
@@ -42,15 +30,13 @@ footer {
         align-items: center;
     }
     
-    /* Ceci est un élément */
     &__link {
         margin-left: 30px;
-        color: #242424;
+        color: $fifth-color;
         text-decoration: none;
         
-        /* Ceci est un modificateur */
         &--purple {
-            color: #a5b4fc
+            color: $second-color
         }
 
         &:hover {
@@ -64,7 +50,6 @@ footer {
         }
     }
 }
-
 
 section {
     padding: 80px;
@@ -80,14 +65,9 @@ h1 {
     }
 }
 
-p,
-li {
-    font-size: 1.1em;
-}
-
 .btn__cta {
     display: inline-block;
-    background: linear-gradient(#8e86b5, #acaeed);
+    background: linear-gradient($fourth-color, darken($fourth-color, 15%));
     color: white;
     border-radius: 50px;
     padding: 20px 30px;
@@ -98,12 +78,13 @@ li {
     }
 }
 
-
 footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    padding: 20px 50px;
 
     .footer__icon {
         margin-left: 30px;

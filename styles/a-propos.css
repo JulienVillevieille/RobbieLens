@@ -1,4 +1,8 @@
-.carre-contenu {
+/* Section A propos*/
+.about__title {
+  text-align: center;
+}
+.about__content {
   border-right: 1px solid #8e86b5;
   border-bottom: 1px solid #8e86b5;
   padding: 50px;
@@ -6,55 +10,37 @@
   margin: auto;
   margin-bottom: 80px;
 }
-
-.carre-contenu h2 {
+.about__content__title {
   margin-top: 30px;
 }
-
-.carre-contenu ul {
+.about__content__list {
   margin-top: 30px;
 }
-
-.carre-contenu + div {
+.about__content__cta {
   text-align: center;
 }
 
-.a-propos-main {
-  margin: auto;
+/* Section Tarifs */
+@media screen and (max-width: 996px) {
+  .prices {
+    display: none;
+  }
 }
-
-table {
+.prices__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.prices__table {
   color: white;
   text-align: center;
   width: 100%;
   border-collapse: collapse;
 }
-
-td,
-th {
+.prices__table__titleCell {
   padding: 15px;
   border: 1px solid #a5b4fc;
 }
-
-td {
+.prices__table__cell {
   padding: 80px;
-}
-
-h2 {
-  margin-bottom: 80px;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
-@media screen and (max-width: 1024px) 
-{
-  .tarifs {
-      display: none;
-  }
-
-  
-}
+  border: 1px solid #a5b4fc;
+}/*# sourceMappingURL=a-propos.css.map */

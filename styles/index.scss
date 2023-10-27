@@ -1,3 +1,5 @@
+@import 'vars';
+
 /* Section Intro */
 .intro {
   display: flex;
@@ -6,7 +8,7 @@
   margin: auto;
   max-width: 1000px;
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: $max-width-media) {
     flex-direction: column;
     align-items: center;
     gap: 30px;
@@ -25,7 +27,7 @@
     margin-bottom: 30px;
 
     &--purple {
-      color: #a5b4fc;
+      color: $second-color;
       font-style: normal;
     }
   }
@@ -38,7 +40,7 @@
   padding: 80px;
 
   &__title {
-    color: #242424;
+    color: $fifth-color;
     text-align: center;
     margin-bottom: 80px;
   }
@@ -50,7 +52,7 @@
     justify-content: center;
     margin-bottom: 15px;
 
-    @media screen and (max-width: 996px) {
+    @media screen and (max-width: $max-width-media) {
       flex-direction: column;
     }
   }
@@ -61,7 +63,7 @@
 .contact {
 
   &__title {
-    color: #a5b4fc;
+    color: $second-color;
     text-align: center;
     margin-bottom: 50px;
   }
@@ -79,7 +81,7 @@
     flex-direction: row;
     gap: 20px;
 
-    @media screen and (max-width: 996px)  {
+    @media screen and (max-width: $max-width-media)  {
       flex-direction: column;
     }
   }

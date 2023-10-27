@@ -1,10 +1,17 @@
+@import 'vars';
+
+.main__title {
+  text-align: center;
+}
+
 /* Section Portfolio */
 .portfolio {
   background-color: white;
 
   &__title {
-    color: #242424;
+    color: $fifth-color;
     margin-bottom: 80px;
+    text-align: center;
   }
 
   &__grid {
@@ -14,8 +21,9 @@
 
     &--paysages {
       grid-template-rows: 300px 300px 300px;
+      margin-bottom: 80px;
 
-      @media screen and (max-width: 996px) {
+      @media screen and (max-width: $max-width-media) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 300px 300px 300px 300px;
       }
@@ -24,7 +32,7 @@
     &--portraits {
       grid-template-rows: 300px 300px;
 
-      @media screen and (max-width: 996px) {
+      @media screen and (max-width: $max-width-media) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 300px 300px;
       }
