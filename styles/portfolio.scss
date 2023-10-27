@@ -1,0 +1,63 @@
+/* Section Portfolio */
+.portfolio {
+  background-color: white;
+
+  &__title {
+    color: #242424;
+    margin-bottom: 80px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &--paysages {
+      grid-template-rows: 300px 300px 300px;
+
+      @media screen and (max-width: 996px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+      }
+    }
+
+    &--portraits {
+      grid-template-rows: 300px 300px;
+
+      @media screen and (max-width: 996px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px;
+      }
+    }
+
+    &__link {
+      position: relative;
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &__imageHover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+      }
+
+      &:hover{
+        .portfolio__grid__link__imageHover {
+          display: flex;
+        }
+      }
+    }
+  }
+}
